@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF4FF"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자1 입력" />
+
+    <EditText
+        android:id="@+id/Edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="숫자2 입력" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:stretchColumns="*">
+
+        <TableRow android:layout_marginBottom="10dp">
+            <Button android:id="@+id/Btn0" android:text="0" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+            <Button android:id="@+id/Btn1" android:text="1" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+            <Button android:id="@+id/Btn2" android:text="2" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+            <Button android:id="@+id/Btn3" android:text="3" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+            <Button android:id="@+id/Btn4" android:text="4" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/Btn5" android:text="5" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+            <Button android:id="@+id/Btn6" android:text="6" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+            <Button android:id="@+id/Btn7" android:text="7" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+            <Button android:id="@+id/Btn8" android:text="8" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+            <Button android:id="@+id/Btn9" android:text="9" android:backgroundResource="@drawable/round_button" android:textColor="#FFFFFF" android:layout_margin="2dp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BtnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundResource="@drawable/round_button"
+            android:text="더하기"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/BtnSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundResource="@drawable/round_button"
+            android:text="빼기"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/BtnMul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundResource="@drawable/round_button"
+            android:text="곱하기"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/BtnDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundResource="@drawable/round_button"
+            android:text="나누기"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="계산 결과:"
+        android:textColor="#A52A2A"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
